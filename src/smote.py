@@ -29,10 +29,11 @@ def smote(T, N, k, minoritySamples, fo):
     for i in range(0, T - 1):
         #print(" ")
         #print ("Minority Sample:" + str(minoritySamples[i]))
+        printToFile(minoritySamples[i], fo)
         nnArray = getNearestNeighbors(minoritySamples, k + 1, i)
         Populate(N, i, k, nnArray, minoritySamples, fo)
 
-    fo.close()
+    # fo.close()
 
 
 def Populate(N, currentIndex, k, nnArray, minoritySamples, fo):
