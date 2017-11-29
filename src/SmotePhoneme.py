@@ -11,7 +11,7 @@ import numpy as np
 # Sample[][] - Array for Original Minority class samlpes
 # Synthetic[][] - Array for synthetic samples
 
-numattrs = 4
+numattrs = 5
 
 def smoteforPhoneme(T, N, k, minoritySamples, fo):
     if (N < 100):

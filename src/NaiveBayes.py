@@ -34,7 +34,7 @@ def naiveBayes(filename, numberOfFeatures):
 
 
         majorityDist = float(500)
-        multiplier = [1, 2, 5, 10, 15, 20, 25,30, 35, 40, 45, 50]
+        multiplier = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25,30, 35, 40, 45, 50]
         for m in multiplier:
             minorityDist = float(m) * majorityDist
             totalDist = minorityDist + majorityDist
