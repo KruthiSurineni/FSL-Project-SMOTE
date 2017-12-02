@@ -13,6 +13,7 @@ import numpy as np
 
 numattrs = 36
 
+
 def smoteforSatimage(T, N, k, minoritySamples, fo):
     if (N < 100):
         T = (N / 100) * T

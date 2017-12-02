@@ -13,6 +13,7 @@ import numpy as np
 
 numattrs = 5
 
+
 def smoteforPhoneme(T, N, k, minoritySamples, fo):
     if (N < 100):
         T = (N / 100) * T
@@ -21,7 +22,7 @@ def smoteforPhoneme(T, N, k, minoritySamples, fo):
     # Number of Synthetic samples to be created per sample from Minority class
     N = int(N / 100)
 
-    for i in range(0, T ):
+    for i in range(0, T):
         # print(" ")
         # print ("Minority Sample:" + str(minoritySamples[i]))
         printToFile(minoritySamples[i], fo)

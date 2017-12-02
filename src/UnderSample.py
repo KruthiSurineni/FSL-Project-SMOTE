@@ -1,8 +1,6 @@
 __author__ = 'Sagar Navgire'
 
 import random
-import csv
-
 
 # T - Number of Minority Class Samples
 # N - RAte of Under-sampling
@@ -20,11 +18,9 @@ def underSample(T, N, majoritySamples, numberMajoritySamples):
 
     while (numberMajoritySamples > targetNumberMajoritySamples):
         indexToDelete = random.randint(0, numberMajoritySamples - 1)
-        #print indexToDelete
         copySamples.pop(indexToDelete)
         numberMajoritySamples -= 1
 
     print ("Number of Majority class: " + str(len(copySamples)))
-
 
     return copySamples
