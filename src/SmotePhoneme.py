@@ -1,4 +1,3 @@
-__author__ = 'Sagar Navgire'
 
 import random
 from sklearn.neighbors import NearestNeighbors
