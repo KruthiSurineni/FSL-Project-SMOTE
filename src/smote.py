@@ -1,4 +1,3 @@
-__author__ = 'Sagar Navgire'
 
 import random
 from sklearn.neighbors import NearestNeighbors
@@ -76,8 +75,5 @@ def getNearestNeighbors(minoritySamples, k, i):
 
 
 def printToFile(Synthetic, fo):
-    outputString = (
-        str(Synthetic[0]) + "," + str(Synthetic[1]) + "," + str(Synthetic[2]) + "," + str(
-            Synthetic[3]) + "," + str(Synthetic[4]) + "," + str(Synthetic[5]) + "," + str(
-            Synthetic[6]) + "," + str(Synthetic[7]) + "," + str(Synthetic[8]))
+    outputString = ''.join(str(s) for s in Synthetic)
     fo.write(outputString + "\n")
